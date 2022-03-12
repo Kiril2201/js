@@ -1,33 +1,18 @@
 
 
-const button=document.getElementById('button1');
-const h1 = document.getElementById('h1')
-const picture=document.getElementById('picture')
-const wrapper = document.getElementById('wrapper')
-button.onclick= function(button1){
-let title = prompt('Первый вопрос:лучшая вещь в мире:')
+let sum = 0
+let number = prompt('введите положительное число')
 
-h1.textContent= title
-if(title='диван'){
-    alert('ты прав!')
-}
-else{
-    alert('это не то')
-        
-
-}
-wrapper.classList.remove('hide')
-}
-button.onclick= function(button2)
+if (number>= 0)
 {
-    let title2 = prompt('Второй вопрос:лучший день в недели:')
-
-h1.textContent= title2
-if(title2='пятница'){
-    alert('ты прав!')
+    sum + number
+    number = prompt('введите положительное число')
 }
-else{
-    alert('точно не этот')
+if(number<0)
+{
+    break;
+    return sum 
+   
 }
-}
+alert(sum)
 
