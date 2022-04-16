@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .item {
+            border: 1px solid black;
+            border-radius: 4px;
+            padding: 10px;
+            width: 200px;
+            margin: 10px;
+        }
+
+        .item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .item h1 {
+            font-size: 20px;
+        }
+
+        .price {
+            background: gray;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <template id="item-card">
+        <div class="item">
+            <img src="">
+            <h1></h1>
+            <p></p>
+            <span class="price"></span>
+        </div>
+    </template>    
+    <script src="./module.js"></script>
+</body>
+</html>
